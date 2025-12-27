@@ -9,18 +9,19 @@ import { X } from "lucide-react";
 const images = [
   "dji_0344.jpg",
   "DJI_0341.jpg",
-  "Dji_0348.jpg",
+  "DJI_0348.jpg",
   "1.jpg",
   "2.jpg",
   "4.jpg",
-  "Room1-L.jpeg",
-  "Room2-L.jpeg",
-  "Room3-L.jpeg",
-  "Room4-L.jpeg",
-  "ValleyView.jpeg",
-  "Room4-L2.jpeg",
-  "valleyView-zoomed.jpeg",
-  "Room2-L.jpeg",
+  "6.jpg",
+  "5.jpg",
+  "8.jpg",
+  "12.jpg",
+  "13.jpg",
+  "21.jpg",
+  "14.jpg",
+  "15.jpg",
+  "17.jpg",
 ];
 
 export default function GalleryPage() {
