@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ================================
+   THEME TOKENS
+   ================================ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+/* ================================
+   LIGHT THEME (IMPROVED CONTRAST)
+   ================================ */
+.dark3 {
+  --radius: 0.75rem;
+
+  /* Backgrounds */
+  --background: #f8f2e9;      /* Softer ivory */
+  --secondary: #f2e6d8;
+  --card: #ffffff;
+
+  /* Text */
+  --foreground: #2a1f1a;      /* Strong readable brown */
+  --secondary-foreground: #2a1f1a;
+  --card-foreground: #2a1f1a;
+  --muted-foreground: #6b5a4e;
+
+  /* Accent (Bronze Gold – Premium) */
+  --accent: #b8892f;          /* darker, richer gold */
+  --accent-soft: #9a7328;
+  --accent-foreground: #ffffff;
+
+  /* Primary (Header / Footer) */
+  --primary: #0e2233;         /* deep navy */
+  --primary-foreground: #ffffff;
+
+  /* UI */
+  --muted: #efe3d6;
+  --border: #dcc8b3;
+  --input: #dcc8b3;
+  --ring: #b8892f;
+}
+
+
+/* ================================
+   DARK THEME (UNCHANGED – PERFECT)
+   ================================ */
+:root {
+  /* Backgrounds */
+  --background: #0b1c2d;
+  --card: #12283f;
+  --secondary: #162f4a;
+
+  /* Text */
+  --foreground: #f6efe6;
+  --card-foreground: #f6efe6;
+  --secondary-foreground: #f6efe6;
+  --muted-foreground: #cbbfae;
+
+  /* Accent (Gold CTA & Active) */
+  --accent: #f1c76a;
+  --accent-soft: #e3b957;
+  --accent-foreground: #0b1c2d;
+
+  /* Primary (Navbar / Footer background) */
+  --primary: #081726;
+  --primary-foreground: #f6efe6;
+
+  /* UI */
+  --muted: #162f4a;
+  --border: #1f3a57;
+  --input: #1f3a57;
+  --ring: #f1c76a;
+}
+
+
+/* ================================
+   BASE
+   ================================ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+.section {
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
