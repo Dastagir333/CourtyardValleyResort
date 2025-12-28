@@ -13,7 +13,7 @@ export default function Footer() {
         {/* About */}
         <div className="space-y-4">
           <h2 className="text-lg font-semibold text-accent">
-            Courtyard Valley Resort
+            Courtyard Valley Villa
           </h2>
           <p className="text-sm leading-relaxed text-muted-foreground">
             A premium 4-BHK valley-view villa offering luxury, comfort, and a
@@ -64,7 +64,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <Mail size={18} className="text-accent" />
-              courtyardvalleyresort@gmail.com
+              courtyardvalleyvilla@gmail.com
             </li>
           </ul>
 
@@ -89,7 +89,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-4 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Courtyard Valley Resort. All rights reserved.
+          © {new Date().getFullYear()} Courtyard Valley Villa. All rights reserved.
         </div>
       </div>
     </footer>

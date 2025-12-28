@@ -29,14 +29,14 @@ export default function Navbar() {
         >
           <Image
             src="/images/courtyardVilla_logo.png"
-            alt="Courtyard Valley Resort"
+            alt="Courtyard Valley Villa"
             width={55}
             height={50}
             className="md:w-12 md:h-12"
           />
 
           <span className="text-primary-foreground font-semibold tracking-wide text-sm md:text-lg leading-tight">
-            Courtyard Valley Resort
+            Courtyard Valley Villa
           </span>
         </Link>
 

@@ -29,7 +29,7 @@ export default function HomePage() {
               className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-white"
             >
               Welcome to <br />
-              <span className="text-accent">Courtyard Valley Resort</span>
+              <span className="text-accent">Courtyard Valley Villa</span>
             </motion.h1>
 
             <motion.p

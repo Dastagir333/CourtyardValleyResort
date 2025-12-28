@@ -256,7 +256,7 @@ const reviews = [
               </li>
               <li className="flex gap-2">
                 <span>✉</span>
-                <span>courtyardvalley@gmail.com</span>
+                <span>courtyardvalleyvilla@gmail.com</span>
               </li>
             </ul>
           </aside>

@@ -74,7 +74,7 @@ export default function ContactPage() {
             <div>
               <h3 className="font-semibold text-lg">Email</h3>
               <p className="text-muted">
-                courtyardvalleyresort@gmail.com
+                courtyardvalleyvilla@gmail.com
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
             <div>
               <h3 className="font-semibold text-lg">Location</h3>
               <p className="text-muted">
-                Courtyard Valley Resort, Panchgani–Mahabaleshwar Road,
+                Courtyard Valley Villa, Panchgani–Mahabaleshwar Road,
                 Bhilar, Panchgani
               </p>
             </div>
