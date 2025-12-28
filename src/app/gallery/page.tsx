@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import Link from "next/link";
 
 const images = [
   "dji_0344.jpg",
@@ -131,7 +132,24 @@ export default function GalleryPage() {
           <p className="text-muted-foreground mb-6">
             Book the entire villa and enjoy privacy, luxury and breathtaking views.
           </p>
-          <Button size="lg">Book Your Stay</Button>
+          <Button
+            size="lg"
+            className="
+              px-8 py-5
+              rounded-full
+              bg-accent/90
+              text-accent-foreground
+              font-semibold
+              shadow-md
+              transition-all
+  
+              hover:bg-accent
+              active:scale-[0.98]
+              hover:scale-[1.05]
+            "
+          >
+            <Link href="/booking">Book a Stay</Link>
+          </Button>
         </div>
       </section>
 

@@ -89,7 +89,9 @@ export default function BookingPage() {
                 type="date"
                 value={checkIn}
                 onChange={(e) => setCheckIn(e.target.value)}
+                placeholder="DD-MM-YYYY"
                 className="w-full cursor-pointer rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                required
               />
             </div>
           </div>
@@ -107,7 +109,9 @@ export default function BookingPage() {
                 type="date"
                 value={checkOut}
                 onChange={(e) => setCheckOut(e.target.value)}
+                placeholder="DD-MM-YYYY"
                 className="w-full cursor-pointer rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                required
               />
             </div>
           </div>
@@ -123,6 +127,7 @@ export default function BookingPage() {
                 value={guests}
                 onChange={(e) => setGuests(Number(e.target.value))}
                 className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                required
               />
             </div>
           </div>
@@ -138,6 +143,7 @@ export default function BookingPage() {
               onChange={(e) => setName(e.target.value)}
               className="w-full rounded-xl border border-border bg-background px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="Your Name"
+              required
             />
           </div>
 
@@ -152,6 +158,7 @@ export default function BookingPage() {
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder="+91 98765 43210"
+                required
               />
             </div>
           </div>
@@ -167,6 +174,7 @@ export default function BookingPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder="you@example.com"
+                required
               />
             </div>
           </div>
