@@ -103,7 +103,7 @@ export default function ContactPage() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
-                className="w-full rounded-lg border border-border bg-background px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
 
             </div>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 required
               />
               </div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="+91 98765 43210"
-                className="w-full rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 required
               />
               </div>
@@ -155,7 +155,7 @@ export default function ContactPage() {
                 onChange={(e) => setMessage(e.target.value)}
                 rows={4}
                 placeholder="Write your message"
-                className="w-full rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 required
               />
               </div>
@@ -167,7 +167,7 @@ export default function ContactPage() {
               className={`
                 w-full
                 flex items-center justify-center gap-2
-                py-3 rounded-lg
+                py-3 rounded-full
                 font-semibold text-lg
                 transition-all duration-200
                 ${

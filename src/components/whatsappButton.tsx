@@ -25,9 +25,10 @@ export default function WhatsAppButton() {
       "
     >
       <MessageCircle size={20} />
-      <span className="hidden sm:inline font-medium">
-        Book on WhatsApp
-      </span>
+      <span className="font-medium">
+      <span className="inline sm:hidden">Book</span>
+      <span className="hidden sm:inline">Book on WhatsApp</span>
+    </span>
     </a>
   );
 }

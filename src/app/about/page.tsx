@@ -17,8 +17,39 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 export default function AboutPage() {
+
+const reviews = [
+  {
+    text: "The villa is absolutely stunning with breathtaking valley views. Clean rooms, peaceful atmosphere, and very courteous staff. Perfect place to unwind.",
+    author: "Amit R.",
+    tag: "Family Stay"
+  },
+  {
+    text: "We stayed here for a weekend with friends and loved every moment. Spacious rooms, beautiful sunset views, and great hospitality throughout our stay.",
+    author: "Sneha P.",
+    tag: "Group Stay"
+  },
+  {
+    text: "Courtyard Valley Resort exceeded our expectations. The location is serene, rooms are well-maintained, and the overall experience was very relaxing.",
+    author: "Rahul K.",
+    tag: "Weekend Getaway"
+  },
+  {
+    text: "A perfect blend of luxury and nature. The valley-facing view is mesmerizing, especially in the evening. Highly recommended for families.",
+    author: "Neha S.",
+    tag: "Verified Stay"
+  },
+  {
+    text: "One of the best places to stay near Panchgani. Calm surroundings, premium interiors, and prompt service. Would definitely visit again.",
+    author: "Vikas M.",
+    tag: "Couple Stay"
+  }
+];
+
+
   return (
     <main className="bg-background text-foreground">
 
@@ -131,35 +162,52 @@ export default function AboutPage() {
 
       {/* GUEST REVIEWS */}
       <section className="max-w-6xl mx-auto px-6 py-12">
-        <h3 className="text-2xl font-bold text-accent text-center mb-8">
-          What Our Guests Say
-        </h3>
+  <h3 className="text-2xl font-bold text-accent text-center mb-8">
+    What Our Guests Say
+  </h3>
 
-        <Swiper
-          modules={[Autoplay, Pagination, Navigation]}
-          autoplay={{ delay: 4000 }}
-          pagination={{ clickable: true }}
-          navigation
-          spaceBetween={20}
-          slidesPerView={1}
-          breakpoints={{ 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
-        >
-          {[1, 2, 3, 4].map((i) => (
-            <SwiperSlide key={i}>
-              <div className="bg-card p-6 rounded-xl shadow h-full">
-                <p className="text-muted-foreground text-sm mb-4">
-                  “Beautiful villa, peaceful surroundings and excellent
-                  hospitality. Highly recommended for group stays.”
-                </p>
-                <div className="font-semibold text-accent">— Guest</div>
-                <div className="text-xs text-muted-foreground">
-                  Verified Stay
-                </div>
+  <Swiper
+    modules={[Autoplay, Pagination, Navigation]}
+    autoplay={{ delay: 4000 }}
+    pagination={{ clickable: true }}
+    navigation
+    spaceBetween={20}
+    slidesPerView={1}
+    breakpoints={{
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }}
+    className="review-swiper"
+  >
+    {reviews.map((review, index) => (
+      <SwiperSlide key={index}>
+        <div className="h-full">
+          <div className="bg-card border border-border rounded-xl p-6 shadow
+                          h-[220px] flex flex-col justify-between">
+            
+            {/* Review text */}
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              “{review.text}”
+            </p>
+
+            {/* Author */}
+            <div className="pt-4">
+              <div className="font-semibold text-accent">
+                — {review.author}
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
+              <div className="text-xs text-muted-foreground">
+                {review.tag}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</section>
+
+
 
       {/* LOCATION */}
       <section className="max-w-6xl mx-auto px-6 py-12">
@@ -184,12 +232,6 @@ export default function AboutPage() {
               className="w-full h-full border-0" 
               loading="lazy" 
               />
-              {/* <iframe
-                title="Courtyard Valley Location"
-                src="https://maps.google.com/maps?q=SkyVilleResort,Panchgani&z=13&output=embed"
-                className="w-full h-full border-0"
-                loading="lazy"
-              /> */}
             </div>
           </div>
 
@@ -210,7 +252,7 @@ export default function AboutPage() {
               </li>
               <li className="flex gap-2">
                 <span>📞</span>
-                <span>+91 75175 12640</span>
+                <span>+91 75175 12640 / +91 93701 19683</span>
               </li>
               <li className="flex gap-2">
                 <span>✉</span>
@@ -232,7 +274,24 @@ export default function AboutPage() {
           <p className="text-muted-foreground mb-6">
             Book the entire villa for your next getaway.
           </p>
-          <Button size="lg">Book Your Stay</Button>
+          <Button
+          size="lg"
+          className="
+            px-8 py-5
+            rounded-full
+            bg-accent/90
+            text-accent-foreground
+            font-semibold
+            shadow-md
+            transition-all
+
+            hover:bg-accent
+            active:scale-[0.98]
+            hover:scale-[1.05]
+          "
+        >
+          <Link href="/booking">Book a Stay</Link>
+        </Button>
         </div>
       </section>
 

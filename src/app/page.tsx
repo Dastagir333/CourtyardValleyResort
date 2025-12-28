@@ -48,11 +48,33 @@ export default function HomePage() {
               transition={{ delay: 0.4 }}
               className="mt-6"
             >
-              <Button size="lg" className="px-8">
+              <Button
+                size="lg"
+                className="
+                  px-10 py-6
+                  rounded-full
+                  bg-accent
+                  text-accent-foreground
+                  font-semibold
+                  shadow-lg
+                  transition-all duration-300
+
+                  hover:bg-accent-soft
+                  hover:text-accent-foreground
+                  hover:scale-[1.10]
+
+                  active:scale-[0.98]
+                  focus-visible:ring-2
+                  focus-visible:ring-accent
+                  focus-visible:ring-offset-2
+                "
+              >
                 <Link href="/booking" className="flex items-center gap-2">
                   Book Your Stay <ChevronRight />
                 </Link>
               </Button>
+
+
             </motion.div>
 
           </div>
@@ -114,7 +136,7 @@ export default function HomePage() {
             1024: { slidesPerView: 3 },
           }}
         >
-          {["Room1-L.jpeg", "Room2-L.jpeg", "Room3-L.jpeg", "Room4-L.jpeg"].map(
+          {["1.jpg","5.jpg","6.jpg","8.jpg", "12.jpg", "21.jpg"].map(
             (img) => (
               <SwiperSlide key={img}>
                 <img
@@ -136,9 +158,24 @@ export default function HomePage() {
         <p className="text-muted-foreground max-w-xl mx-auto mb-6">
           Book the entire villa and enjoy a peaceful luxury getaway.
         </p>
-        <Button size="lg" className="px-10">
-          <Link href="/booking">Book Now</Link>
+        <Button
+          size="lg"
+          className="
+            px-8 py-5
+            rounded-full
+            bg-accent/90
+            text-accent-foreground
+            font-semibold
+            shadow-md
+            transition-all
+
+            hover:bg-accent
+            active:scale-[0.98]
+          "
+        >
+          <Link href="/booking">Check Availability</Link>
         </Button>
+
       </section>
 
     </main>

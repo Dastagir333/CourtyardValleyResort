@@ -89,7 +89,7 @@ export default function BookingPage() {
                 type="date"
                 value={checkIn}
                 onChange={(e) => setCheckIn(e.target.value)}
-                className="w-full cursor-pointer rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full cursor-pointer rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function BookingPage() {
                 type="date"
                 value={checkOut}
                 onChange={(e) => setCheckOut(e.target.value)}
-                className="w-full cursor-pointer rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full cursor-pointer rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
           </div>
@@ -122,10 +122,12 @@ export default function BookingPage() {
                 min={1}
                 value={guests}
                 onChange={(e) => setGuests(Number(e.target.value))}
-                className="w-full rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               />
             </div>
           </div>
+
+          
 
           {/* NAME */}
           <div className="sm:col-span-2">
@@ -134,7 +136,7 @@ export default function BookingPage() {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full rounded-lg border border-border bg-background px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+              className="w-full rounded-xl border border-border bg-background px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               placeholder="Your Name"
             />
           </div>
@@ -148,7 +150,7 @@ export default function BookingPage() {
                 type="tel"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder="+91 98765 43210"
               />
             </div>
@@ -163,7 +165,7 @@ export default function BookingPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-full rounded-xl border border-border bg-background px-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder="you@example.com"
               />
             </div>
@@ -173,7 +175,7 @@ export default function BookingPage() {
           <button
             type="submit"
             disabled={loading}
-            className="sm:col-span-2 mt-2 rounded-lg bg-accent py-3 text-sm font-semibold text-accent-foreground hover:opacity-90 transition disabled:opacity-60"
+            className="sm:col-span-2 mt-2 rounded-full bg-accent py-3 text-sm font-semibold text-accent-foreground hover:opacity-90 transition disabled:opacity-60"
           >
             {loading ? (
               <span className="flex items-center justify-center gap-2">
