@@ -28,16 +28,16 @@ export default function Navbar() {
           className="flex items-center gap-3 md:gap-3 md:flex-row text-center md:text-left"
         >
           <Image
-            src="/images/courtyardVilla_logo.png"
+            src="/images/Logo_4-bgRemoved.png"
             alt="Courtyard Valley Villa"
-            width={55}
+            width={70}
             height={50}
-            className="md:w-12 md:h-12"
+            className="md:w-25 md:h-12"
           />
 
-          <span className="text-primary-foreground font-semibold tracking-wide text-sm md:text-lg leading-tight">
+          {/* <span className="text-primary-foreground font-semibold tracking-wide text-sm md:text-lg leading-tight">
             Courtyard Valley Villa
-          </span>
+          </span> */}
         </Link>
 
 
