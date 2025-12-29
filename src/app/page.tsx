@@ -18,7 +18,7 @@ export default function HomePage() {
       {/* HERO */}
       <section
         className="relative h-[85vh] md:h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/ValleyView.jpeg')" }}
+        style={{ backgroundImage: "url('/images/dji_0344.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center px-4">
           <div className="text-center max-w-3xl">
